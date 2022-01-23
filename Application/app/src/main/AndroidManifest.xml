@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='utf-8'?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.appme.story">
+
+    <!-- FOREGROUND_SERVICE -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+
+    <!-- akses penuh Internet. -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <!-- lihat status Wi-Fi. -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+
+    <!-- lihat status jaringan. -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <!-- baca konten kartu SD Anda -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <!-- mengubah atau menghapus konten kartu SD Anda -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <!-- cegah telepon tidur. -->
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+
+    <application
+        android:name=".AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:largeHeap="true"
+        android:resizeableActivity="false">
+
+        <activity
+            android:name=".application.ApplicationActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.Splash">
+
+            <intent-filter>
+
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".application.CrashActivity"
+            android:screenOrientation="portrait"/>
+
+        <service
+            android:name=".service.AppMeService"
+            android:enabled="true"
+            android:exported="false"/> 
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.appme.story.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+
+        </provider>
+
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="4.0"/>
+
+    </application>
+
+</manifest>

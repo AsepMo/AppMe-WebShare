@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark">#37474F</color> <!-- [ BLUE GRAY - 800 ] -->
+    <color name="colorPrimary">#455A64</color> <!-- [ BLUE GRAY - 700 ] -->
+    <color name="colorPrimaryLight">#CFD8DC</color> <!-- [ BLUE GRAY - 100 ] -->
+    <color name="colorAccent">#263238</color> <!-- [ BLUE GRAY - 900 ] -->
+
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="textColorSecondary">#B2B2B2</color>
+
+    <color name="text">#FFFFFF</color>
+    <color name="icons">#1E1E1E</color>
+    <color name="divider">#1E1E1E</color>
+    
+    <color name="semi_transparent_black">#90000000</color>
+    <color name="title_navigation_view">#FF5722</color>
+    <color name="item_list_folder_title">#FF5722</color>
+    <color name="item_list_folder_subtitle">#FF5722</color>
+    
+    <color name="folder_gray">#aaa</color>
+
+    <!-- ligth theme -->
+    <color name="light_bookmark_bg">#fbfbfb</color>
+    <color name="light_color_primary">#e0e0e0</color>
+    <color name="light_color_primaryDark">#212121</color>
+    <color name="holo_light_window_background">#F0F0F0</color>
+
+    <!-- dark theme -->
+    <color name="dark_bookmark_bg">#333333</color>
+    <color name="dark_color_primary">#131313</color>
+    <color name="dark_color_primaryDark">#090909</color>
+    <color name="holo_dark_window_background">#222222</color>
+    
+    <color name="colorControlNormal">@color/textColorSecondary</color>
+    <color name="colorControlActivated">@color/colorAccent</color>
+    <color name="colorControlHighlight">@color/divider</color>
+
+    <!--
+    <color name="colorButtonNormal">#19C1B2</color>
+    <color name="colorSwitchThumbNormal">#19C1B2</color>
+    <color name="navigationBarColor">@color/colorPrimaryDark</color>
+    -->
+
+    <color name="windowBackground">#212121</color>
+    <color name="lightBackground">#E0E0E0</color>
+    <color name="darkBackground">#424242</color>
+    <color name="drawerBackground">#FFfafafa</color>
+    <color name="rowBackground">#34474F</color>
+    
+</resources>
